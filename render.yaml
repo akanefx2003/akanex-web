@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: akane-md-web
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: BOT_NAME
+        value: AKANE-MD
+      - key: VERSION
+        value: 2.0.0
+      - key: OWNER
+        value: 221771202333
+      - key: CHANNEL_LINK
+        value: https://whatsapp.com/channel/0029VbCrJRnGufIyytPXy606
+      - key: GITHUB_LINK
+        value: https://github.com/akanefx2003/AKANE_MD
+      - key: YOUTUBE_LINK
+        value: https://youtube.com/@akanefx-j3k9o
